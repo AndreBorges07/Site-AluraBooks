@@ -1,0 +1,180 @@
+
+.cabecalho__menu-hamburger{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+} 
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburger{
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+
+.cabecalho{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*Sobre o menu que vai aparecer... */
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none; /*Esconde a lista*/
+    position: absolute; /*para este funcionar, também tem que colocar lá no "Cabeçalho".*/
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu{ /*Esse "checked" é para ser exibido assim que o check estiver marcado.*/
+    display: block;
+}
+
+.container__botao{
+    display: none; /*Faz o botão de "check" sumir*/
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+    
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+    
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text; /*Esses "webkit" é pra funcionar bem em outros navegadores*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;  
+
+}
+
+.container__titulo, .opcoes{
+    display: none;
+}
+
+.container__texto{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){ /*para tablet*/
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+        
+    }
+
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente{
+        display: none;
+    }
+
+    .cabecalho__menu-hamburger{
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu{ /*É como uma função, se estiver marcado, faça*/
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo> .opcoes__item{ /*Isso é o efeito que o clique no menu faz*/
+        background: var(--azul-degrade);
+        color: var(--branco);
+
+    }
+
+    .opcoes__item{
+        padding: 2em 1em;
+    }
+
+    .opcoes__item:hover{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item:hover > .opcoes__link{
+        -webkit-text-fill-color: var(--branco);
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+}
+    
+
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+}
