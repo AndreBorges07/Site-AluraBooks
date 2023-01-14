@@ -4,8 +4,8 @@
 ![Páginas - Alura Books](https://user-images.githubusercontent.com/93163125/212214243-cdc621ad-a66c-45cd-a382-0ba365d9264e.png)
 
 # Descrição
-Projeto com três dimensionamentos, smartphone, tablet e desktop. Usei o méttodo de responsividade com mobile-first. 
-<br>Pratiquei e melhorei meus conhecimentos sobre Responsividade. Sim, tamnbém melhorei meu HTML e CSS. rs 
+Projeto com três dimensionamentos, smartphone, tablet e desktop. Usei o método de responsividade com mobile-first.
+<br>Pratiquei e melhorei meus conhecimentos sobre Responsividade. Sim, também melhorei meu HTML e CSS. rs
 <br>Acesse o projeto aqui: https://site-alura-books-drab.vercel.app/
 
 # Tecnologias utilizadas
