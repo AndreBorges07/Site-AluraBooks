@@ -24,3 +24,9 @@ Projeto com três dimensionamentos, smartphone, tablet e desktop. Usei o método
     <li>Produzindo CSS no desktop</li>
     <li>Foram feitas 56 de 56 atividades.</li>
 </ul>
+
+# Certificado: HTML E CSS: RESPONSIVIDADE COM MOBILE-FIRST
+
+Acesse aqui: https://cursos.alura.com.br/certificate/andreBorges07/html-css-responsividade-mobile-first
+
+
